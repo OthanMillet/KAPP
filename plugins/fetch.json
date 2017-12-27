@@ -1,0 +1,21 @@
+{
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "phonegap-facebook-plugin": {
+    "source": {
+      "type": "local",
+      "path": "C:\\wamp\\www\\KApp\\node_modules\\phonegap-facebook-plugin"
+    },
+    "is_top_level": true,
+    "variables": {
+      "APP_ID": "2045233702379585",
+      "APP_NAME": "Kareer"
+    }
+  }
+}
