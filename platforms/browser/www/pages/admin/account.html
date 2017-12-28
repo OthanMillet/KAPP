@@ -1,25 +1,22 @@
-<div class="page no-toolbar no-navbar" data-page="account">
+<div class="page" data-page="account">
     <div class="page-content infinite-scroll" style="white-space: normal;">
-        <div class="card-header-pic" style="height: auto !important; margin-top: 0px !important; margin-left: auto; margin-bottom: auto;">
+        <div class="card-header-pic">
             <div class="card-header">
-                <a href="#" data-load="index" class="btn btn-floating btn-flat white waves-effect waves-teal waves-light home color-gray"><i class="icon f7-icons">arrow_left</i></a>Account
+                <a href="#" data-load="index" class="btn btn-floating btn-flat white waves-effect waves-teal waves-light back color-gray"><i class="icon f7-icons">arrow_left</i></a>Account
             </div>
-            <div class="toolbar toolbar-bottom center hidden" style="height: 59px; background-color: white;margin-top: -117px;">
-                <a href="#" class="saveAccount btn btn-large white-text waves-effect waves-purple waves-light" style="border-radius: 30px;width: 90%;height: 49px; font-size: 20px; background-color: #7a5578;"><strong class="">Save</strong></a>
-            </div>
-            <div class="content-block" id="display_accountInfo" style="padding: 0;">
+            <div class="content-block" id="display_accountInfo" style="padding: 0; margin: auto !important;">
                <ul>
                    <li class="item-content" style="padding-left: 0px !important; padding-right: 0px !important;">
-                       <div class="item-inner row" id="display_givenName">
+                       <div class="item-inner row show" id="display_givenName">
                            <div class="col s10"><small>Given Name: </small><strong></strong></div>
                            <div class="col s2">
                             <a href="#" data-cmd = "edit" data-value='' data-node ='' data-prop='GivenName' class="btn btn-floating btn-flat waves-effect waves-teal waves-light"><i class="icon f7-icons color-gray">compose</i></a>
                           </div>
                        </div>
-                       <div class="row hidden" id="edit_givenName">
+                       <div class="row hidden edit" id="edit_givenName">
                         <form action="" method="POST" id='form_givenName' style="width: 100%">
                           <label class="col s12 a active" for="field_GivenName">Given Name</label>
-                          <input type="text" id="field_GivenName" value='' name="field_GivenName" class="col s8 form-control" style="    margin-bottom: auto; margin-left: 10px !important; width: 74% !important; height: auto;">
+                          <input type="text" id="field_GivenName" value='' name="field_GivenName" required="true" maxlength="30" class="col s8 form-control" style="    margin-bottom: auto; margin-left: 10px !important; width: 74% !important; height: auto;">
                           <button class="col s0 btn btn-flat btn-xs"><i class="icon f7-icons" style="top: -10px;">check</i></button>
                           <a data-cmd ="cancel" class="col s0 btn btn-flat btn-xs"><i class="icon f7-icons" style="color: black; top: -10px;">round_close</i></a>
                         </form>
@@ -302,15 +299,5 @@
                </ul> 
             </div>     
         </div>  
-    </div>
-    <!-- <div class="modal-overlay"></div> -->
-    <div class="popup popup-edit">
-        <div class="page-content login-screen-content infinite-scroll" style="background: transparent;">
-            <div class="content-block">
-                <div class="">Update account<i class="icon f7-icons close-popup" style="width: 25px; position: absolute;right: 5%;">close_round</i></div>
-                <div class="page-content" id="editpopup" style="overflow:hidden;">
-                </div>
-            </div>
-        </div>
     </div>
 </div>
